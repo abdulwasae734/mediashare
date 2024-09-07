@@ -1,38 +1,63 @@
-.App {
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Glassmorphism effect */
+.glass-container {
+  width: 90vw;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Hero Section (specific to App.js pages) */
+.hero {
   text-align: center;
+  padding: 100px 20px;
+  background-color: #eee;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-button {
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-button:hover {
+  background-color: #ff7961;
 }
